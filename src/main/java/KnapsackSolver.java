@@ -1,10 +1,7 @@
 import org.javatuples.Pair;
 import org.javatuples.Quartet;
-import org.javatuples.Quintet;
-import org.javatuples.Triplet;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -50,7 +47,7 @@ public class KnapsackSolver {
 				}
 			}
 		}
-		return Pair.with(getItems(items, itemsToTake, itemListSize, maxWeight) ,m[itemListSize][maxWeight]);
+		return Pair.with(getItems(items, itemsToTake, itemListSize, maxWeight), m[itemListSize][maxWeight]);
 	}
 
 	private static List<Item> getItems(Quartet<Item, Integer, Integer, Boolean>[][] items, List<Item> itemList, Integer i, Integer j) {
